@@ -307,6 +307,8 @@ input{
     background-color:#D3C0AC;
     justify-content:flex-start;
     position: relative;
+    padding:1rem;
+    padding-top:auto;
   }
   .landing{
     height: 70vh;
@@ -336,7 +338,7 @@ input{
     background-position: left;
   }
   section.card2{
-    background-color: ##485550;
+    background-color: #485550;
     color:white;
   }
   section.prices2{
@@ -360,7 +362,7 @@ input{
     -webkit-box-direction: normal;
     flex-flow:row wrap;
     align-items:center;
-    text-align:center;
+    text-align:left;
     -webkit-box-pack:center;
     justify-content: center;
     background-size: cover;
