@@ -1,0 +1,803 @@
+body, html{
+  margin: 0;
+  scroll-behavior: smooth;
+}
+::selection {
+  background: #485550; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #485550; /* Gecko Browsers */
+}
+span{
+  color:darkgrey;
+}
+ul {
+  list-style-type: none;
+}
+body{
+  background-color: white;
+  background-position:fixed;
+  background-attachment: fixed;
+  font-family: 'Montserrat', sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section.gallery{
+max-width:100%;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+padding: 0;
+}
+section.gallery-text h1{
+  color:black;
+  align-items: center;
+  text-align: center;
+  grid-area:gt;
+}
+.example-image-link{
+  width: 30%;
+  padding:2px;
+  height: auto;
+}
+.gallery-image{
+  max-width: 100%;
+  height: auto;
+  transition: transform .2s; /* Animation */
+  box-sizing: border-box;
+  vertical-align:center;
+  align-items: center;
+  position: relative;
+}
+.gallery-image:hover{
+  transform: scale(1.1);
+  z-index: 22222;
+}
+section.prices p{
+  text-align: center;
+}
+section.prices2 p{
+  text-align: center;
+}
+h3{
+  text-align: center;
+}
+header{
+  padding: 0.5em;
+  padding-top: 0;
+  display: flex;
+  z-index: 20;
+  padding:3rem;
+  top: 0;
+  justify-content:space-evenly;
+  background: white;
+}
+#infos{
+  text-align: center;
+  color:black;
+  font-family: 'Montserrat';
+  font-weight: lighter;
+  padding: 1rem;
+}
+header a{
+  text-decoration: none;
+  color:white;
+}
+a:hover{
+background: #ddd;
+  color: black;
+}
+header nav ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+li a{
+  padding: 0.5em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.wrapper{
+  display: grid;
+  background-color: white;
+  grid-template-rows: auto;
+}
+section{
+  padding: 3em;
+}
+section h1, h2, .button{
+  text-transform: uppercase;
+  margin:0;
+}
+h2{
+  font-size: 1.4rem;
+}
+h1{
+  font-size: 2.4rem;
+  color: white;
+}
+.landing{
+display: none;
+}
+button{
+  max-width: 60%;
+  padding: 1em;
+  padding-left: 0;
+  background-color:white;
+  border: 1px  black;
+  font-family: 'Montserrat';
+}
+.text{
+  color:white;
+
+}
+.button{
+  text-decoration: none;
+  color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  background-color: #485550;
+  padding: 1.5em;
+  font-weight: bold;
+  display: inline-block;
+}
+.button2{
+  text-decoration: none;
+  background-color: black	;
+  padding: 1.5em 1.5em 1.5em calc(3em + 25px);
+  font-weight: bold;
+  background-color: rgba(1, 0, 0, 0.5);
+  display: inline-block;
+  border-left: 0;
+  color:white;
+  margin-top: 3em;
+  margin-left: -3em;
+}
+.clipper{
+  overflow: hidden;
+}
+section.hero{
+  background-image: url(img/nyaraló-10.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+section.hero p{
+  max-width: 70%;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+section.footer{
+  color:black;
+}
+.darken-overlay section{
+  background-color: rgba(0,0,0,0.5);
+}
+section.fishing{
+  background-image: url("steg.jpeg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color:white;
+  background-position: center;
+  background-size: cover;
+
+}
+section.sidebar, section.subscribe{
+  font-size: .9rem;
+  line-height: 1.6em;
+  color:white;
+}
+section.pictures{
+  background-color:#333339;
+  color:white;
+  background-size: cover;
+}
+section.rent{
+  background:linear-gradient(
+    rgba(0,0,0,0.6),
+    rgba(0,0,0,0.6)
+    ),
+    url(img/nyaraló-20.jpg);
+  z-index: -2;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  color:white;
+  -webkit-box-direction: normal;
+  flex-flow:row wrap;
+  align-items:center;
+  text-align:center;
+  -webkit-box-pack:center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  margin-top:1rem;
+  margin-bottom:1rem;
+
+}
+section.subscribe{
+  background-color:#333333;
+  background-image: url("fck.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section.inner{
+  border: 1px solid black;
+}
+
+input{
+  width: 60%;
+  padding: 1em;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 1em;
+}
+@media only screen and (max-width:400px){
+  html{
+  font-size: 18px;
+  }
+  .landing{
+    display: block;
+    background:linear-gradient(
+      rgba(0,0,0,0.3),
+      rgba(0,0,0,0.3)
+      ),
+      url(landing.jpeg);
+    }
+  header {
+    color:white;
+  }
+  header{
+    background-color:black;
+  }
+  section.hero{
+    padding:2em;
+    padding-left: 3em;
+    height: 80vh;
+  }
+}
+@media only screen and (min-width:768px){
+  html{
+  font-size: 18px;
+  }
+  .landing{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    color:white;
+    align-items: center;
+    background:linear-gradient(
+      rgba(0,0,0,0.3),
+      rgba(0,0,0,0.3)
+      ),
+      url(landing.jpeg);
+      background-size:cover;
+    }
+    section.card2{
+      color:white;
+      background-color: grey;
+    }
+    section.sights{
+      background-color: grey;
+    }
+
+    section.fishing{
+        background-color: grey;
+    }
+    section.prices2{
+      color:white;
+      background-color: grey;
+        margin-bottom: 2rem;
+      margin-bottom: 2rem;
+    }
+    section.prices{
+
+    }
+  header a{
+    color:black;
+  }
+}
+@media only screen and (max-width:768px){
+  html{
+  font-size: 18px;
+  }
+  header nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  li a{
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  header{
+    background-color: #485550;
+    justify-content:flex-start;
+    position: relative;
+    padding:1rem;
+    padding-top:auto;
+  }
+  .landing{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(
+      rgba(0,0,0,0.3),
+      rgba(0,0,0,0.3)
+      ),
+      url(landing.jpeg);
+      background-size:cover;
+      padding: 3rem;
+    }
+    .landing p{
+      color:white;
+    }
+    .landing h1{
+      font-size: 28px;
+    }
+
+  #header.active {
+     box-shadow: 0 0 2px rgba(0,0,0,0.2);
+}
+  section.hero{
+    padding-top: 2rem;
+    background-position: left;
+  }
+  section.card2{
+    background-color: #485550;
+    color:white;
+  }
+  section.prices2{
+      background-color:#485550;
+    color:white;
+  }
+  section.fishing{
+    display: flex;
+    color:black;
+    background:linear-gradient(
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+      ),
+      url(img/nyaraló-1-8.jpg);
+    z-index: -2;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow:row wrap;
+    align-items:center;
+    text-align:left;
+    -webkit-box-pack:center;
+    justify-content: center;
+    background-size: cover;
+    height: auto;
+    color:white;
+  }
+  section.footer{
+    font-size: 16px;
+    padding: 3.5rem;
+  }
+  .button2{
+    padding-left: 2rem;
+}
+}
+@media only screen and (min-width:1028px){
+  body{
+    margin:3rem;
+  }
+  header{
+    background:	 white;;
+    text-align: center;
+    padding: 0;
+  }
+  header a{
+    color:black;
+  }
+  .landing{
+    margin:1rem 3rem 1rem 3rem;
+    background:linear-gradient(
+      rgba(0,0,0,0.3),
+      rgba(0,0,0,0.3)
+      ),
+      url(landing.jpeg);
+    z-index: -2;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow:row wrap;
+    align-items:center;
+    text-align:center;
+    -webkit-box-pack:center;
+    justify-content: center;
+    background-size: cover;
+    height: 80vh;
+}
+section.fishing{
+  background:linear-gradient(
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)
+    ),
+    url(img/nyaraló-1-8.jpg);
+  z-index: -2;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-flow:row wrap;
+  align-items:center;
+  text-align:justify;
+  -webkit-box-pack:center;
+  justify-content: center;
+  background-size: cover;
+  height: auto;
+}
+.landing h1{
+  font-size: 50px;
+  font-weight: lighter;
+}
+.landing p{
+  color:white;
+  font-weight: 300;
+  font-size:22px;
+  padding: 3rem 3rem 1rem 3rem;
+}
+  .wrapper{
+    background-color:white:
+    height: auto;
+    margin: 3rem;
+    grid-gap:5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "hero hero about"
+      "hero hero about"
+      "hero hero about"
+      "hazirend hazirend hazirend"
+      "card1 card2 card3"
+      "sights sights sights"
+      "rent rent rent"
+      "gt gt gt"
+      "gallery gallery gallery"
+      "prices prices2 prices2"
+      "fishing fishing fishing"
+      "footer footer footer";
+  }
+section.sights{
+  grid-area:sights;
+  background-color: white;
+
+}
+  section.hazirend{
+    grid-area:hazirend;
+
+}
+
+  .hazirend h1{
+    color:black;}
+  section.gallery-text{
+    grid-area:gt;
+  }
+  section.about{
+    grid-area:about;
+    color:WHITE;
+    background-color:  #485550;
+  }
+  section.rent{
+    grid-area:rent;
+    text-align: justify;
+  }
+  section.footer{
+  grid-area: footer;
+  text-align: center;
+  grid-template-rows: auto;
+  background-color: #485550 ;
+  color:WHITE;
+}
+section.gallery{
+  grid-area:gallery;
+}
+section.fishing{
+margin-top: 1rem;
+margin-bottom: 1rem;
+  grid-area: fishing;
+}
+section.pictures{
+  grid-area:pictures;
+}
+section.prices{
+  grid-area:prices;
+  display: grid;
+  margin-top: 3rem;
+  background-color: #485550;
+  padding:3rem;
+  color:white;
+  margin-bottom: 2rem;
+}
+section.prices2{
+  grid-area:prices2;
+
+  display: grid;
+  color:black;
+  margin-left: 1rem;
+  background-color: #485550;
+  color:white;
+  padding: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+
+}
+section.card1{
+  grid-area:card1;
+  color:white;background:linear-gradient(
+    rgba(0,0,0,0.3),
+    rgba(0,0,0,0.3)
+    ),
+    url(img/nyaraló-1-4.jpg);
+    background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center left;
+  display: grid;
+  background-color:#485550;
+}
+section.card2{
+  grid-area:card2;
+  display: grid;
+  background:linear-gradient(
+    rgba(0,0,0,0.3),
+    rgba(0,0,0,0.3)
+    ),
+    url(img/nyaraló-1-9.jpg);
+      background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center left;
+
+  color:white;
+  background-color:#30422e;
+}section.card3{
+  grid-area:card3;
+  display: grid;
+  color:white;
+  padding: 3rem;
+  background-color:#CECBAB;
+  background:linear-gradient(
+    rgba(0,0,0,0.3),
+    rgba(0,0,0,0.3)
+    ),
+    url(img/nyaraló-10.jpg);
+      background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left  right;
+}
+
+ .button2{
+   margin-top:1rem;
+   margin-left: 0;
+   padding:1.5rem;
+   box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
+ }
+  section.hero{
+    grid-area: hero;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
+    background:linear-gradient(
+      rgba(0,0,0,0.3),
+      rgba(0,0,0,0.3)
+      ),
+      url(img/nyaraló-30.jpg);
+      background-size: cover;
+      background-attachment:fixed;
+      background-position: center;
+    grid-template-rows: auto;
+  }
+}
+@media only screen and(min-width:1800px){
+  html{
+    font-size: 21px;
+  }
+}
+@-ms-viewport{
+  width: device-width;
+}
+body.lb-disable-scrolling {
+  overflow: hidden;
+}
+
+.lightboxOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: black;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  display: none;
+}
+
+
+.lightbox {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  text-align: center;
+  line-height: 0;
+  font-weight: normal;
+}
+
+.lightbox .lb-image {
+  display: block;
+  height: auto;
+  max-width: inherit;
+  max-height: none;
+  border-radius: 3px;
+
+  /* Image border */
+  border: 4px solid white;
+}
+
+.lightbox a img {
+  border: none;
+}
+
+.lb-outerContainer {
+  position: relative;
+  *zoom: 1;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  border-radius: 4px;
+  /* Background color behind image.
+     This is visible during transitions. */
+  background-color: white;
+}
+.lb-outerContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.lb-loader {
+  position: absolute;
+  top: 43%;
+  left: 0;
+  height: 25%;
+  width: 100%;
+  text-align: center;
+  line-height: 0;
+}
+.lb-cancel {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+  background: url(../images/loading.gif) no-repeat;
+}
+.lb-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+.lb-container > .nav {
+  left: 0;
+}
+.lb-nav a {
+  outline: none;
+  background-image: url('data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
+}
+.lb-prev, .lb-next {
+  height: 100%;
+  cursor: pointer;
+  display: block;
+}
+.lb-nav a.lb-prev {
+  width: 34%;
+  left: 0;
+  float: left;
+  background: url(../images/prev.png) left 48% no-repeat;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  -o-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+}
+.lb-nav a.lb-prev:hover {
+}
+.lb-nav a.lb-next {
+  width: 64%;
+  right: 0;
+  float: right;
+  background: url(../images/next.png) right 48% no-repeat;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  -o-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+}
+.lb-nav a.lb-next:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+.lb-dataContainer {
+  margin: 0 auto;
+  padding-top: 5px;
+  *zoom: 1;
+  width: 100%;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.lb-dataContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.lb-data {
+  padding: 0 4px;
+  color: #ccc;
+}
+.lb-data .lb-details {
+  width: 85%;
+  float: left;
+  text-align: left;
+  line-height: 1.1em;
+}
+.lb-data .lb-caption {
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1em;
+}
+.lb-data .lb-caption a {
+  color: #4ae;
+}
+.lb-data .lb-number {
+  display: block;
+  clear: left;
+  padding-bottom: 1em;
+  font-size: 12px;
+  color: #999999;
+}
+.lb-data .lb-close {
+  display: block;
+  float: right;
+  width: 30px;
+  height: 30px;
+  background: url(../images/close.png) top right no-repeat;
+  text-align: right;
+  outline: none;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+.lb-data .lb-close:hover {
+  cursor: pointer;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+}
