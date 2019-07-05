@@ -20,6 +20,7 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 section.gallery{
 width:100%;
 display: flex;
@@ -460,6 +461,11 @@ section.fishing{
       "fishing fishing fishing"
       "footer footer footer";
   }
+  section.hazirend{
+    grid-area:hazirend;
+}
+  .hazirend h1{
+    color:black;}
   section.gallery-text{
     grid-area:gt;
   }
