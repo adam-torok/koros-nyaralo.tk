@@ -90,7 +90,6 @@ header nav ul{
   justify-content: center;
   align-items: center;
   justify-content: center;
-
   margin: 0;
   padding: 0;
 }
@@ -304,10 +303,9 @@ input{
     color:white;
     text-transform: uppercase;
     text-align: center;
-    font-size: 10px;
   }
   header{
-    background-color:#D3C0AC;
+    background-color: #485550;
     justify-content:flex-start;
     position: relative;
     padding:1rem;
