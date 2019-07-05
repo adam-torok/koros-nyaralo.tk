@@ -8,6 +8,9 @@ body, html{
 ::-moz-selection {
   background: #485550; /* Gecko Browsers */
 }
+ul {
+  list-style-type: none;
+}
 body{
   background-color: white;
   position: relative;
