@@ -427,7 +427,7 @@ input{
 }
 @media only screen and (min-width:1028px){
   body{
-    
+    background-color: #fafafa;
   }
   header{
     background:	 white;;
@@ -488,6 +488,7 @@ section.fishing{
   padding: 3rem 3rem 1rem 3rem;
 }
   .wrapper{
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
     background-color:white:
     height: auto;
     margin: 3rem;
