@@ -445,7 +445,6 @@ input{
       url(landing.jpeg);
     z-index: -2;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     position: relative;
     display: flex;
     -webkit-box-orient: horizontal;
@@ -456,7 +455,6 @@ input{
     -webkit-box-pack:center;
     justify-content: center;
     background-size: cover;
-    height: 80vh;
 }
 section.fishing{
   background:linear-gradient(
