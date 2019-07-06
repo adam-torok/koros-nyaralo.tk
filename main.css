@@ -427,18 +427,17 @@ input{
 }
 @media only screen and (min-width:1028px){
   body{
-    margin:3rem;
+    
   }
   header{
     background:	 white;;
     text-align: center;
-    padding: 0;
+    padding: 2rem;
   }
   header a{
     color:black;
   }
   .landing{
-    margin:1rem 3rem 1rem 3rem;
     background:linear-gradient(
       rgba(0,0,0,0.3),
       rgba(0,0,0,0.3)
