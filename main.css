@@ -1,0 +1,905 @@
+body, html{
+  margin: 0;
+  scroll-behavior: smooth;
+
+}
+::selection {
+  background:#1E2B31; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background:#1E2B31; /* Gecko Browsers */
+}
+h3{
+  font-family: 'Raleway', sans-serif;
+  font-size: 2rem;
+}
+span{
+  z-index:300;
+  color:darkgrey;
+}
+ul {
+  list-style-type: none;
+}
+body{
+  background-color: white;
+  background-position:fixed;
+  background-attachment: fixed;
+  font-family: 'Montserrat', sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#scroll {
+    position:fixed;
+    z-index:3000;
+    right:10px;
+    bottom:10px;
+    cursor:pointer;
+    width:50px;
+    height:50px;
+    background-color:grey;
+    text-indent:-9999px;
+    display:none;
+    -webkit-border-radius:60px;
+    -moz-border-radius:60px;
+    border-radius:60px
+}
+#scroll span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    z-index:300;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color:#ffffff;
+}
+#scroll:hover {
+    background-color:#485550;
+    opacity:1;filter:"alpha(opacity=100)";
+    -ms-filter:"alpha(opacity=100)";
+}
+section.gallery{
+max-width:100%;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+padding: 0;
+}
+section.gallery-text h1{
+  color:white;
+  align-items: center;
+  text-align: center;
+  grid-area:gt;
+}
+.example-image-link{
+  width: 30%;
+  padding:2px;
+  height: auto;
+}
+.gallery-image{
+  max-width: 100%;
+  height: auto;
+  transition: transform .2s; /* Animation */
+  box-sizing: border-box;
+  vertical-align:center;
+  align-items: center;
+  position: relative;
+}
+.gallery-image:hover{
+  transform: scale(1.1);
+  z-index: 22222;
+}
+section.prices p{
+  text-align: center;
+}
+section.prices2 p{
+  text-align: center;
+}
+h3{
+  text-align: center;
+  color:#C6B275;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+header{
+    position: fixed;
+    z-index: 40000;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: top 0.5s ease-in-out;
+    width: 100%;
+}
+.nav-up {
+    top: -200px;
+}
+#infos{
+  text-align: center;
+  color:black;
+  font-family: 'Montserrat';
+  font-weight: lighter;
+  padding: 1rem;
+}
+header a{
+  text-decoration: none;
+  color:white;
+}
+a:hover{
+background: #ddd;
+  color: black;
+}
+header nav ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+li a{
+  padding: 0.5em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.wrapper{
+  display: grid;
+  background-color: #C6B275;
+  grid-template-rows: auto;
+}
+section{
+  padding: 3em;
+}
+section h1, h2, .button{
+  text-transform: uppercase;
+  margin:0;
+}
+h2{
+  font-size: 1.4rem;
+}
+h1{
+  font-size: 2.4rem;
+  color: white;
+}
+.landing{
+display: none;
+}
+button{
+  max-width: 60%;
+  padding: 1em;
+  padding-left: 0;
+  background-color:white;
+  border: 1px  black;
+  font-family: 'Montserrat';
+}
+.text{
+  color:white;
+
+}
+.button{
+  text-decoration: none;
+  color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  background-color:#1E2B31;
+  padding: 1.5em;
+  font-weight: bold;
+  display: inline-block;
+}
+.button2{
+  text-decoration: none;
+  background-color: black	;
+  padding: 1.5em 1.5em 1.5em calc(3em + 25px);
+  font-weight: bold;
+  background-color: rgba(1, 0, 0, 0.5);
+  display: inline-block;
+  border-left: 0;
+  color:white;
+  margin-top: 3em;
+  margin-left: -3em;
+}
+.clipper{
+  overflow: hidden;
+}
+section.hero{
+  background-image: url(img/nyaraló-10.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+section.hero p{
+  max-width: 70%;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+section.footer{
+  color:black;
+}
+.darken-overlay section{
+  background-color: rgba(0,0,0,0.5);
+}
+section.fishing{
+  background-image: url("steg.jpeg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color:white;
+  background-position: center;
+  background-size: cover;
+
+}
+section.sidebar, section.subscribe{
+  font-size: .9rem;
+  line-height: 1.6em;
+  color:white;
+}
+section.pictures{
+  background-color:#333339;
+  color:white;
+  background-size: cover;
+}
+section.rent{
+  background:linear-gradient(
+    rgba(0,0,0,0.6),
+    rgba(0,0,0,0.6)
+    ),
+    url(img/nyaraló-20.jpg);
+  z-index: -2;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  color:white;
+  -webkit-box-direction: normal;
+  flex-flow:row wrap;
+  align-items:center;
+  text-align:center;
+  -webkit-box-pack:center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  margin-top:1rem;
+  margin-bottom:1rem;
+
+}
+section.subscribe{
+  background-color:#333333;
+  background-image: url("fck.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section.inner{
+  border: 1px solid black;
+}
+
+input{
+  width: 60%;
+  padding: 1em;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 1em;
+}
+@media only screen and (max-width:400px){
+  html{
+  font-size: 18px;
+  }
+  .landing{
+    display: block;
+    background:linear-gradient(
+      rgba(0,0,0,0.3),
+      rgba(0,0,0,0.3)
+      ),
+      url(nyaraló-10.jpeg);
+    }
+  header {
+    color:white;
+  }
+  header{
+    background-color:black;
+  }
+  section.hero{
+    padding:2em;
+    padding-left: 3em;
+    height: 80vh;
+  }
+}
+@media only screen and (min-width:768px){
+  html{
+  font-size: 18px;
+  }
+  .landing{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    color:white;
+    align-items: center;
+    background:linear-gradient(
+      rgba(0,0,0,0.3),
+      rgba(0,0,0,0.3)
+      ),
+      url(nyaraló-10.jpeg);
+      background-size:cover;
+    }
+    section.card2{
+      color:white;
+      background-color: grey;
+    }
+    section.sights{
+      background-color: grey;
+    }
+
+    section.fishing{
+        background-color: grey;
+    }
+    section.prices2{
+      color:white;
+      background-color: grey;
+        margin-bottom: 2rem;
+      margin-bottom: 2rem;
+    }
+    section.prices{
+
+    }
+  header a{
+    color:black;
+  }
+}
+@media only screen and (max-width:768px){
+  html{
+  font-size: 18px;
+  }
+  header nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  li a{
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  header{
+    background-color:#1E2B31;
+    justify-content:flex-start;
+    position: relative;
+    padding:1rem;
+    padding-top:auto;
+  }
+  .landing{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(
+      rgba(0,0,0,0.3),
+      rgba(0,0,0,0.3)
+      ),
+      url(nyaraló-10.jpeg);
+      background-size:cover;
+      padding: 3rem;
+    }
+    .landing p{
+      color:white;
+    }
+    .landing h1{
+      font-size: 28px;
+    }
+
+  #header.active {
+     box-shadow: 0 0 2px rgba(0,0,0,0.2);
+}
+  section.hero{
+    padding-top: 2rem;
+    background-position: left;
+  }
+  section.card2{
+    background-color:#1E2B31;
+    color:white;
+  }
+  section.prices2{
+      background-color:#C6B275;
+    color:white;
+  }
+  section.fishing{
+    display: flex;
+    color:black;
+    background:linear-gradient(
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+      ),
+      url(img/nyaraló-1-8.jpg);
+    z-index: -2;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow:row wrap;
+    align-items:center;
+    text-align:left;
+    -webkit-box-pack:center;
+    justify-content: center;
+    background-size: cover;
+    height: auto;
+    color:white;
+  }
+  section.footer{
+    font-size: 16px;
+    padding: 3.5rem;
+  }
+  .button2{
+    padding-left: 2rem;
+}
+}
+@media only screen and (min-width:1028px){
+  body{
+    background-color: #fafafa;
+  }
+  header{
+    background:	 white;;
+    text-align: center;
+    padding: 2rem;
+  }
+  header a{
+    color:black;
+  }
+  .landing{
+    background:linear-gradient(
+      rgba(0,0,0,0.3),
+      rgba(0,0,0,0.3)
+      ),
+      url("img/nyaraló-10.jpg");
+    z-index: -2;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    height: 100vh;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow:row wrap;
+    align-items:center;
+    text-align:center;
+    background-attachment: fixed;
+    -webkit-box-pack:center;
+    justify-content: center;
+    background-size: cover;
+    background-position: bottom;
+}
+section.fishing{
+  background:linear-gradient(
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)
+    ),
+    url(img/nyaraló-1-8.jpg);
+  z-index: -2;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-flow:row wrap;
+  align-items:center;
+  text-align:justify;
+  -webkit-box-pack:center;
+  justify-content: center;
+  background-size: cover;
+  height: auto;
+}
+.landing h1{
+  font-size: 50px;
+  font-weight: lighter;
+}
+.landing p{
+  color:white;
+  font-weight: 300;
+  font-size:22px;
+  padding: 3rem 3rem 1rem 3rem;
+}
+  .wrapper{
+    padding:1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    background-color:white:
+    height: auto;
+    margin: 0rem;
+    grid-gap:5px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "ct ct"
+        "card1 card2"
+        "card3 card4"
+      "hazirend hazirend"
+      "rent rent"
+      "sights sights"
+      "gt gt"
+      "gallery gallery"
+      "prices prices2"
+      "fishing fishing"
+      "footer footer";
+  }
+section.sights{
+  grid-area:sights;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  margin:2rem 5rem 2rem 5rem;
+  background-color: #1E2B31;;
+  color:white;
+}
+  section.hazirend{
+    grid-area:hazirend;
+    margin:2rem 5rem 2rem 5rem;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+#card-title{
+  grid-area:ct;
+  text-align: center;
+  font-weight: bold;
+}
+  .hazirend h1{
+    color:black;}
+  section.gallery-text{
+    grid-area:gt;
+    text-align: center;
+    font-weight: bolder;
+  }
+  section.about{
+    grid-area:about;
+
+    color:WHITE;
+    background-color: #1E2B31;
+  }
+  section.rent{
+    grid-area:rent;
+    text-align: justify;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+  section.footer{
+  grid-area: footer;
+  text-align: center;
+  grid-template-rows: auto;
+  background-color:#1E2B31 ;
+  color:WHITE;
+}
+hr.style-three {
+height: 30px;
+width: auto;
+border-style: solid;
+border-color: white;
+border-width: 1px 0 0 0;
+border-radius: 20px;
+}
+hr.style-three:before {
+display: block;
+content: "";
+height: 30px;
+margin-top: -31px;
+border-style: solid;
+border-color: white;
+border-width: 0 0 1px 0;
+border-radius: 50px;
+}
+section.gallery{
+  grid-area:gallery;
+  background-color: white;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  margin:2rem 5rem 2rem 5rem;
+
+}
+section.fishing{
+margin-top: 1rem;
+margin-bottom: 1rem;
+  grid-area: fishing;
+}
+section.pictures{
+  grid-area:pictures;
+}
+section.prices{
+  grid-area:prices;
+  display: grid;
+  margin-top: 3rem;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  padding:3rem;
+  color:black;
+  margin-bottom: 2rem;
+  margin:2rem 1rem 1rem 5rem;
+
+}
+section.prices2{
+  grid-area:prices2;
+  display: grid;
+  color:black;
+  margin-left: 1rem;
+  background-color:white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  color:black;
+  padding: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  margin:2rem 5rem 1rem 1rem;
+
+}
+section.card1{
+  grid-area:card1;
+  color:white;
+  margin: 2rem 0rem 0rem auto;
+  display:grid;
+  width:30vw;
+  background-color: white;
+  background:linear-gradient(
+    rgba(0,0,0,0.3),
+    rgba(0,0,0,0.3)
+    ),
+    url("img/nyaraló-1-4.jpg");
+    background-attachment: fixed;
+    background-position: left;
+
+  }
+section.card1 h3{
+  color:white;
+}
+section.card4 h3{
+  color:white;
+  font-weight: bold;
+}
+section.card2{
+  grid-area:card2;
+  font-weight: lighter;
+  color:black;
+  margin: 2rem auto 0rem 0rem;
+  display:grid;
+  width:30vw;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
+}section.card3{
+  grid-area:card3;
+  color:black;
+  margin: 0rem 0rem 2rem auto;
+  display:grid;
+  width:30vw;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
+}
+section.card4{
+  grid-area:card4;
+  color:white;
+  margin: 0rem auto 2rem 0rem;
+  display:grid;
+  width:30vw;
+  background-color: white;
+  background:linear-gradient(
+    rgba(0,0,0,0.3),
+    rgba(0,0,0,0.3)
+    ),
+    url("img/nyaraló-1-11.jpg");
+    background-attachment: fixed;
+    background-position: center;
+  }
+}
+
+ .button2{
+   margin-top:1rem;
+   margin-left: 0;
+   padding:1.5rem;
+   box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
+ }
+  section.hero{
+    grid-area: hero;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
+    background:linear-gradient(
+      rgba(0,0,0,0.3),
+      rgba(0,0,0,0.3)
+      ),
+      url(img/nyaraló-30.jpg);
+      background-size: cover;
+      background-attachment:fixed;
+      background-position: center;
+    grid-template-rows: auto;
+  }
+}
+@media only screen and(min-width:1800px){
+  html{
+    font-size: 21px;
+  }
+}
+@-ms-viewport{
+  width: device-width;
+}
+body.lb-disable-scrolling {
+  overflow: hidden;
+}
+
+.lightboxOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: black;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  display: none;
+}
+
+
+.lightbox {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  text-align: center;
+  line-height: 0;
+  font-weight: normal;
+}
+
+.lightbox .lb-image {
+  display: block;
+  height: auto;
+  max-width: inherit;
+  max-height: none;
+  border-radius: 3px;
+
+  /* Image border */
+  border: 4px solid white;
+}
+
+.lightbox a img {
+  border: none;
+}
+
+.lb-outerContainer {
+  position: relative;
+  *zoom: 1;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  border-radius: 4px;
+  /* Background color behind image.
+     This is visible during transitions. */
+  background-color: white;
+}
+.lb-outerContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.lb-loader {
+  position: absolute;
+  top: 43%;
+  left: 0;
+  height: 25%;
+  width: 100%;
+  text-align: center;
+  line-height: 0;
+}
+.lb-cancel {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+  background: url(../images/loading.gif) no-repeat;
+}
+.lb-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+.lb-container > .nav {
+  left: 0;
+}
+.lb-nav a {
+  outline: none;
+  background-image: url('data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
+}
+.lb-prev, .lb-next {
+  height: 100%;
+  cursor: pointer;
+  display: block;
+}
+.lb-nav a.lb-prev {
+  width: 34%;
+  left: 0;
+  float: left;
+  background: url(../images/prev.png) left 48% no-repeat;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  -o-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+}
+.lb-nav a.lb-prev:hover {
+}
+.lb-nav a.lb-next {
+  width: 64%;
+  right: 0;
+  float: right;
+  background: url(../images/next.png) right 48% no-repeat;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  -o-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+}
+.lb-nav a.lb-next:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+.lb-dataContainer {
+  margin: 0 auto;
+  padding-top: 5px;
+  *zoom: 1;
+  width: 100%;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.lb-dataContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.lb-data {
+  padding: 0 4px;
+  color: #ccc;
+}
+.lb-data .lb-details {
+  width: 85%;
+  float: left;
+  text-align: left;
+  line-height: 1.1em;
+}
+.lb-data .lb-caption {
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1em;
+}
+.lb-data .lb-caption a {
+  color: #4ae;
+}
+.lb-data .lb-number {
+  display: block;
+  clear: left;
+  padding-bottom: 1em;
+  font-size: 12px;
+  color: #999999;
+}
+.lb-data .lb-close {
+  display: block;
+  float: right;
+  width: 30px;
+  height: 30px;
+  background: url(../images/close.png) top right no-repeat;
+  text-align: right;
+  outline: none;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+.lb-data .lb-close:hover {
+  cursor: pointer;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+}
