@@ -597,6 +597,7 @@ section.sights{
   section.hazirend{
     grid-area:hazirend;
     margin:2rem 5rem 2rem 5rem;
+    color:black;
     background-color: white;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
