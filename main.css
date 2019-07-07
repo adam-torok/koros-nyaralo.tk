@@ -9,6 +9,7 @@ body, html{
   background: #485550; /* Gecko Browsers */
 }
 span{
+  z-index:300;
   color:darkgrey;
 }
 ul {
@@ -42,6 +43,7 @@ body{
     left:50%;
     margin-left:-8px;
     margin-top:-12px;
+    z-index:300;
     height:0;
     width:0;
     border:8px solid transparent;
@@ -496,11 +498,8 @@ section.fishing{
     grid-gap:5px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
-      "hero hero about"
-      "hero hero about"
-      "hero hero about"
+        "card1 card2 card3"
       "hazirend hazirend hazirend"
-      "card1 card2 card3"
       "sights sights sights"
       "rent rent rent"
       "gt gt gt"
