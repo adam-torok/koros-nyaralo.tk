@@ -103,6 +103,9 @@ header{
     transition: top 0.5s ease-in-out;
     width: 100%;
 }
+.nav-up {
+    top: -200px;
+}
 #infos{
   text-align: center;
   color:black;
