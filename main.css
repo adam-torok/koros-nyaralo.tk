@@ -502,8 +502,8 @@ section.fishing{
     grid-template-areas:
         "card1 card2 card3"
       "hazirend hazirend hazirend"
+            "rent rent rent"
       "sights sights sights"
-      "rent rent rent"
       "gt gt gt"
       "gallery gallery gallery"
       "prices prices2 prices2"
