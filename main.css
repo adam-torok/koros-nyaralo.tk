@@ -25,6 +25,7 @@ body{
 }
 #scroll {
     position:fixed;
+    z-index:3000;
     right:10px;
     bottom:10px;
     cursor:pointer;
@@ -95,14 +96,12 @@ h3{
   text-align: center;
 }
 header{
-  padding: 0.5em;
-  padding-top: 0;
-  display: flex;
-  z-index: 20;
-  padding:3rem;
-  top: 0;
-  justify-content:space-evenly;
-  background: white;
+    position: fixed;
+    z-index: 40000;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    top: 0;
+    transition: top 0.5s ease-in-out;
+    width: 100%;
 }
 #infos{
   text-align: center;
